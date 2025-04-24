@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web API Példák</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Web API Példák</h1>
+
+    <section id="web-storage">
+        <h2>Web Storage (localStorage)</h2>
+        <input type="text" id="storageInput" placeholder="Írj ide valamit">
+        <button onclick="saveToStorage()">Mentés</button>
+        <button onclick="loadFromStorage()">Betöltés</button>
+        <p id="storageOutput"></p>
+    </section>
+
+    <section id="web-workers">
+        <h2>Web Workers</h2>
+        <button onclick="startWorker()">Worker indítása</button>
+        <button onclick="stopWorker()">Worker leállítása</button>
+        <p id="workerOutput">Számolás eredménye: </p>
+    </section>
+
+    <section id="server-sent-events">
+        <h2>Server-Sent Events</h2>
+        <button onclick="startSSE()">SSE Kapcsolat indítása</button>
+        <button onclick="stopSSE()">SSE Kapcsolat leállítása</button>
+        <p id="sseOutput">Események itt jelennek meg...</p>
+    </section>
+
+    <section id="geolocation">
+        <h2>Geolocation API</h2>
+        <button onclick="getLocation()">Helyzet lekérése</button>
+        <p id="locationOutput"></p>
+    </section>
+
+    <section id="drag-drop">
+        <h2>Drag and Drop API</h2>
+        <div id="dragItem" draggable="true" style="width: 100px; padding: 10px; background-color: #3498db; color: white; text-align: center;">
+            Húzz engem!
+        </div>
+        <div id="dropZone">Húzd ide az elemet</div>
+    </section>
+
+    <section id="canvas">
+        <h2>Canvas</h2>
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+        <button onclick="drawOnCanvas()">Rajzolás</button>
+    </section>
+
+    <section id="svg">
+        <h2>SVG</h2>
+        <div id="svg-container">
+            <svg width="200" height="200">
+                <circle id="svgCircle" cx="100" cy="100" r="50" fill="red" />
+            </svg>
+        </div>
+        <button onclick="changeSvgColor()">Szín változtatása</button>
+    </section>
+    <footer>
+        Komáromi Bálint HPBPCL || Balogh Marcell E4U2N8
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
