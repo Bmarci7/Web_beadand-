@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API CRUD Alkalmazás</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>API CRUD Alkalmazás</h1>
+    
+    <div class="container">
+        <div class="section">
+            <h2>Adatok olvasása</h2>
+            <button id="readData">Adatok lekérése</button>
+            <div id="dataDisplay"></div>
+            <div class="stats" id="heightStats"></div>
+        </div>
+        
+        <div class="section">
+            <h2>Új rekord létrehozása</h2>
+            <input type="text" id="createName" placeholder="Név" maxlength="30">
+            <input type="text" id="createHeight" placeholder="Magasság">
+            <input type="text" id="createWeight" placeholder="Súly">
+            <button id="createData">Rekord létrehozása</button>
+            <div id="createMessage" class="message"></div>
+        </div>
+        
+        <div class="section">
+            <h2>Rekord módosítása</h2>
+            <input type="text" id="updateId" placeholder="Rekord ID">
+            <button id="getDataForId">Adatok lekérése ID alapján</button>
+            <input type="text" id="updateName" placeholder="Név" maxlength="30">
+            <input type="text" id="updateHeight" placeholder="Magasság">
+            <input type="text" id="updateWeight" placeholder="Súly">
+            <button id="updateData">Rekord módosítása</button>
+            <div id="updateMessage" class="message"></div>
+        </div>
+        
+        <div class="section">
+            <h2>Rekord törlése</h2>
+            <input type="text" id="deleteId" placeholder="Rekord ID">
+            <button id="deleteData">Rekord törlése</button>
+            <div id="deleteMessage" class="message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
