@@ -1,7 +1,7 @@
 const API_URL = "http://gamf.nhely.hu/ajax2/";
 const USER_CODE = "HPBPCLwsg726"; 
 
-// Element selection
+
 const readBtn = document.getElementById('readData');
 const createBtn = document.getElementById('createData');
 const updateBtn = document.getElementById('updateData');
@@ -11,7 +11,7 @@ const getDataBtn = document.getElementById('getDataForId');
 const dataDisplay = document.getElementById('dataDisplay');
 const heightStats = document.getElementById('heightStats');
 
-// Display messages
+
 function showMessage(elementId, message, isSuccess) {
     const element = document.getElementById(elementId);
     element.textContent = message;
@@ -21,7 +21,7 @@ function showMessage(elementId, message, isSuccess) {
     }, 5000);
 }
 
-// Input validation
+
 function validateInputs(...inputs) {
     for (const input of inputs) {
         if (!input.value.trim()) {
@@ -41,7 +41,7 @@ function validateInputs(...inputs) {
     return true;
 }
 
-// API call
+
 async function callApi(params) {
     try {
         const formData = new FormData();
@@ -63,7 +63,7 @@ async function callApi(params) {
     }
 }
 
-// Read data
+
 readBtn.addEventListener('click', async () => {
     const result = await callApi({ op: 'read' });
     
@@ -87,7 +87,7 @@ readBtn.addEventListener('click', async () => {
             }
         });
         
-        // Calculate statistics
+        
         if (heights.length > 0) {
             const sum = heights.reduce((a, b) => a + b, 0);
             const avg = sum / heights.length;
@@ -107,7 +107,7 @@ readBtn.addEventListener('click', async () => {
     }
 });
 
-// Create new record
+
 createBtn.addEventListener('click', async () => {
     const nameInput = document.getElementById('createName');
     const heightInput = document.getElementById('createHeight');
@@ -138,7 +138,7 @@ createBtn.addEventListener('click', async () => {
     }
 });
 
-// Get data by ID
+
 getDataBtn.addEventListener('click', async () => {
     const idInput = document.getElementById('updateId');
     
@@ -165,7 +165,7 @@ getDataBtn.addEventListener('click', async () => {
     }
 });
 
-// Update record
+
 updateBtn.addEventListener('click', async () => {
     const idInput = document.getElementById('updateId');
     const nameInput = document.getElementById('updateName');
@@ -192,7 +192,7 @@ updateBtn.addEventListener('click', async () => {
     }
 });
 
-// Delete record
+
 deleteBtn.addEventListener('click', async () => {
     const idInput = document.getElementById('deleteId');
     
