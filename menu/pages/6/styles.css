@@ -1,0 +1,9 @@
+.animal-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    font-family: Arial;
+    background-color: #f9f9f9;
+  }

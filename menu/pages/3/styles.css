@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#canvas {
+    border: 1px solid #000;
+}
+
+#svg-container {
+    width: 200px;
+    height: 200px;
+}
+
+#dropZone {
+    width: 200px;
+    height: 100px;
+    border: 2px dashed #aaa;
+    padding: 20px;
+    text-align: center;
+}
+
+.highlight {
+    background-color: yellow;
+}

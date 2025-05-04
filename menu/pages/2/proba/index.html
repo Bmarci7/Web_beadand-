@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-programozás-1 Házi feladat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li class="active"><a href="#">Főoldal</a></li>
+            <li><a href="#">Első oldal</a></li>
+            <li><a href="#">Második oldal</a></li>
+            <li><a href="#">Harmadik oldal</a></li>
+            <li><a href="#">Negyedik oldal</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <aside>
+            <h3>Oldalsáv</h3>
+            <p>Ez az oldalsáv tartalma. Itt lehetnek további linkek vagy információk.</p>
+        </aside>
+        
+        <div class="content">
+            <h2>CRUD Táblázat</h2>
+            
+            <div class="crud-controls">
+                <button id="addBtn">Új elem hozzáadása</button>
+                <input type="text" id="searchInput" placeholder="Keresés...">
+            </div>
+            
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th data-sort="id">ID <span class="sort-icon">↑↓</span></th>
+                        <th data-sort="name">Név <span class="sort-icon">↑↓</span></th>
+                        <th data-sort="email">Email <span class="sort-icon">↑↓</span></th>
+                        <th data-sort="age">Kor <span class="sort-icon">↑↓</span></th>
+                        <th>Műveletek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <footer>
+        Komáromi Bálint HPBPCL || Balogh Marcell E4U2N8
+    </footer>
+    
+   
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Új elem</h2>
+            <form id="dataForm">
+                <input type="hidden" id="id">
+                <div class="form-group">
+                    <label for="name">Név*</label>
+                    <input type="text" id="name" required minlength="3" maxlength="50">
+                    <div class="error" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" required>
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="age">Kor*</label>
+                    <input type="number" id="age" required min="18" max="120">
+                    <div class="error" id="ageError"></div>
+                </div>
+                <button type="submit">Mentés</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

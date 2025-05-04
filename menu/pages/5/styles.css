@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.section {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+input, button {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #45a049;
+}
+#dataDisplay {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 100px;
+}
+.stats {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: none;
+}
+.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    display: block;
+}
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+    display: block;
+}
